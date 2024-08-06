@@ -16,7 +16,7 @@ export const MainArticle = () => {
   const images = [image1, image2, image3, image4];
 
   return (
-    <section className="mb-12 col-span-12 md:col-span-8 border-2 border-red-500">
+    <section className="mb-12 col-span-12 md:col-span-9 border-2 border-red-500 ">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
