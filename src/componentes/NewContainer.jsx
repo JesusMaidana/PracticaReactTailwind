@@ -3,7 +3,7 @@ import { NewArticle } from "./NewArticle";
 
 export const NewContainer = () => {
   return (
-    <aside className="bg-VeryDarkBlue text-OffWhite py-[28px] px-[20px]">
+    <aside className="bg-VeryDarkBlue text-OffWhite py-[28px] px-[20px] col-span-12 md:col-span-4 md:h-2/3 border-2 border-green-500">
         <h1 className="text-SoftOrange text-4xl">NEW</h1>
         
         <NewArticle

@@ -7,7 +7,7 @@ function App() {
   return (
     <main className="px-4 pt-6">
       <Header />
-      <div className="lg:flex lg:gap-8">
+      <div className="grid grid-cols-12 gap-3">
         <MainArticle />
         <NewContainer/>
       </div>

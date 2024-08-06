@@ -7,7 +7,7 @@ import img3 from '../assets/images/image-gaming-growth.jpg'
 
 export const ArticlesContainer = () => {
   return (
-   <section className="mt-6 md:flex md:flex-wrap md:gap-7">
+   <section className="mt-6 md:flex md:flex-wrap md:gap-7 border-2 border-blue-500">
        <Article 
          img= {img1}
          number= '01'
