@@ -4,7 +4,7 @@ import { NewArticle } from "./NewArticle";
 export const NewContainer = () => {
   return (
     <aside className="bg-VeryDarkBlue text-OffWhite py-[28px] px-[20px] col-span-12 md:col-span-3 border-2 border-green-500 md:h-auto">
-        <h1 className="text-SoftOrange text-4xl">NEW</h1>
+        <h1 className="text-SoftOrange text-4xl">Próximos Shows</h1>
         
        <div className="space-y-6 sm:space-y-8">
         <NewArticle

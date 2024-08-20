@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import burgerMenu from "../assets/images/icon-menu.svg";
 
 export const NavBar = () => {
@@ -5,16 +6,16 @@ export const NavBar = () => {
     <>
       <ul className="hidden sm:flex text-[18px] sm:w-[438px] sm:place-content-around sm:text-[16px] sm:items-center">
         <li>
-          <a href="#">Home</a>
+          <Link to="/video">Videos</Link>
         </li>
         <li>
-          <a href="#">Popular</a>
+          <Link to="/fotos">Fotos</Link>
         </li>
         <li>
-          <a href="#">Trending</a>
+          <Link to="/show">Shows</Link>
         </li>
         <li>
-          <a href="#">Categories</a>
+          <Link to="/contacto">Contacto</Link>
         </li>
       </ul>
 
