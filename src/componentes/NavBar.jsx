@@ -14,16 +14,19 @@ export const NavBar = () => {
     <>
       <ul className="hidden sm:flex text-[18px] sm:w-[438px] sm:place-content-around sm:text-[16px] sm:items-center">
         <li>
-          <Link to="/video">Videos</Link>
+          <Link to="/"  className="hover:text-SoftRed">Home</Link>
         </li>
         <li>
-          <Link to="/fotos">Fotos</Link>
+          <Link to="/video" className="hover:text-SoftRed">Producciones</Link>
         </li>
         <li>
-          <Link to="/show">Shows</Link>
+          <Link to="/fotos"  className="hover:text-SoftRed">Fotos</Link>
         </li>
         <li>
-          <Link to="/contacto">Contacto</Link>
+          <Link to="/show"  className="hover:text-SoftRed">Shows</Link>
+        </li>
+        <li>
+          <Link to="/contacto"  className="hover:text-SoftRed">Contacto</Link>
         </li>
       </ul>
 
@@ -40,7 +43,10 @@ export const NavBar = () => {
           // Aplicamos z-index alto para que esté por encima de otros elementos
         >
           <li className="mb-4">
-            <Link to="/video" onClick={toggleMenu}className="hover:text-black">Videos</Link>
+            <Link to="/" onClick={toggleMenu}className="hover:text-black">Home</Link>
+          </li>
+          <li className="mb-4">
+            <Link to="/video" onClick={toggleMenu}className="hover:text-black">Producciones</Link>
           </li>
           <li className="mb-4">
             <Link to="/fotos" onClick={toggleMenu}className="hover:text-black">Fotos</Link>
