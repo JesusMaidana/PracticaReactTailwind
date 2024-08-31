@@ -5,11 +5,11 @@ import { ArticlesContainer } from '../componentes/ArticlesContainer';
 
 const Inicio = () => {
   return (
-    <div>
+    <>
       <MainArticle />
       <NewContainer />
       <ArticlesContainer />
-    </div>
+    </>
   );
 };
 
