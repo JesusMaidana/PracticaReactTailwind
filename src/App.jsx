@@ -1,4 +1,5 @@
 import { Header } from "./componentes/Header";
+import { Footer } from "./componentes/Footer"; // Asegúrate de tener este archivo creado
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Inicio from './pages/Inicio';  
 import Video from './pages/Video';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>
+      <Footer />
     </BrowserRouter>
   );
 }
