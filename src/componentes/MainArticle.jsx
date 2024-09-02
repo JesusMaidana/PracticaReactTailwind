@@ -16,7 +16,7 @@ export const MainArticle = () => {
   const images = [image1, image2, image3, image4];
 
   return (
-    <section className="mb-12 col-span-12 md:col-span-9 border-2 border-red-500 ">
+    <section className="mb-12 flex-col lg:flex lg:flex-row-reverse items-center justify-center lg:justify-between">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -29,11 +29,11 @@ export const MainArticle = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper lg:w-full"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt={`Slide ${index + 1}`}/>
+            <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
           </SwiperSlide>
         ))}
       </Swiper>

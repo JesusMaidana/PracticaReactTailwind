@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Personaliza el tamaño de las flechas de navegación */
+.swiper-button-prev, .swiper-button-next {
+    width: 30px;  /* Cambia el ancho */
+    height: 30px; /* Cambia la altura */
+    background-size: 5px 5px; /* Ajusta el tamaño del icono dentro del botón */
+}
+
+/* Opcional: Cambia el color de las flechas */
+.swiper-button-prev::after, .swiper-button-next::after {
+    color: #000; /* Cambia el color de las flechas */
+}
+
+/* Opcional: Ajusta la posición de las flechas */
+.swiper-button-prev {
+    left: 10px; /* Cambia la posición horizontal */
+}
+
+.swiper-button-next {
+    right: 10px; /* Cambia la posición horizontal */
+}
+
+
+/* Personaliza el tamaño y el color de las burbujas de paginación */
+.swiper-pagination-bullet {
+    width: 12px;  /* Cambia el ancho de la burbuja */
+    height: 12px; /* Cambia la altura de la burbuja */
+    background-color: #c4c4c4; /* Cambia el color de la burbuja */
+    opacity: 0.5; /* Cambia la opacidad de la burbuja */
+}
+
+/* Opcional: Cambia el color y el tamaño de la burbuja activa */
+.swiper-pagination-bullet-active {
+    background-color: rgb(0, 132, 255); /* Cambia el color de la burbuja activa */
+    width: 12px;  /* Cambia el ancho de la burbuja activa */
+    height: 12px; /* Cambia la altura de la burbuja activa */
+}
