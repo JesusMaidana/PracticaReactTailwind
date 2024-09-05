@@ -38,3 +38,7 @@
     width: 12px;  /* Cambia el ancho de la burbuja activa */
     height: 12px; /* Cambia la altura de la burbuja activa */
 }
+
+/* * {
+    @apply transition-colors duration-200;
+} */
