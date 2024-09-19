@@ -27,21 +27,40 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex place-content-between items-center mb-2 mt-4 mx-2.5">
-      <Link to="/">
+    <header className="flex items-center justify-between mb-2 mt-4 mx-2.5">
+      {/* Logo de Shukran */}
+      <Link to="/" className="flex-shrink-0">
         <img
           src={darkMode ? logoDark : logoLight}
-          alt="Logo"
-          className="w-24 h-auto" // Ajusta el tamaño aquí
+          alt="LogoShukran"
+          className="w-24 h-auto"
         />
       </Link>
-      <NavBar />
-      <button
-        onClick={toggleDarkMode}
-        className="bg-gray-200 dark:bg-gray-800 text-black dark:text-white px-4 py-2 rounded-md"
-      >
-        {darkMode ? "Light Mode" : "Dark Mode"}
-      </button>
+
+      {/* Menú hamburguesa (visible solo en mobile) */}
+      <div className="flex-grow flex justify-center sm:hidden">
+        <button
+          onClick={toggleDarkMode}
+          className="bg-gray-200 dark:bg-gray-800 text-black dark:text-white px-4 py-2 rounded-md"
+        >
+          {darkMode ? "Light Mode" : "Dark Mode"}
+        </button>
+      </div>
+
+      {/* NavBar para pantallas sm+ */}
+      <div className="sm:flex sm:flex-grow sm:justify-center">
+        <NavBar darkMode={darkMode} />
+      </div>
+
+      {/* Botón para cambiar de modo en pantallas sm+ */}
+      <div className="hidden sm:block">
+        <button
+          onClick={toggleDarkMode}
+          className="bg-gray-200 dark:bg-gray-800 text-black dark:text-white px-4 py-2 rounded-md"
+        >
+          {darkMode ? "Light Mode" : "Dark Mode"}
+        </button>
+      </div>
     </header>
   );
 };

@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import burgerMenu from "../assets/images/icon-menu.svg";
 import closeMenuIcon from "../assets/images/icon-menu-close.svg"; // Opcional: icono de cierre
+import burgerMenuWhite from "../assets/images/icon-menu-blanco.png";
+import closeMenuIconWhite from "../assets/images/icon-menu-close-blanco.png"; // Icono blanco para cerrar
 
-export const NavBar = () => {
+export const NavBar = ({ darkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,7 +14,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <ul className="hidden sm:flex text-[18px] sm:w-[438px] sm:place-content-around sm:text-[16px] sm:items-center ">
+      <ul className="hidden sm:flex text-[18px] sm:w-[438px] sm:place-content-around sm:text-[16px] sm:items-center">
         <li>
           <Link to="/" className="hover:text-SoftRed">
             Home
@@ -42,16 +44,21 @@ export const NavBar = () => {
 
       <img
         className="w-10 h-4 cursor-pointer sm:hidden"
-        src={menuOpen ? closeMenuIcon : burgerMenu}
+        src={
+          menuOpen
+            ? darkMode
+              ? closeMenuIconWhite
+              : closeMenuIcon
+            : darkMode
+            ? burgerMenuWhite
+            : burgerMenu
+        }
         alt="Menu hamburguesa"
         onClick={toggleMenu}
       />
 
       {menuOpen && (
-        <ul
-          className="flex flex-col text-[18px] sm:hidden bg-DarkGrayishBlue text-white p-4 absolute top-16 right-0 z-50 shadow-lg"
-          // Aplicamos z-index alto para que esté por encima de otros elementos
-        >
+        <ul className="flex flex-col text-[18px] sm:hidden bg-DarkGrayishBlue text-white p-4 absolute top-16 right-0 z-50 shadow-lg">
           <li className="mb-4">
             <Link to="/" onClick={toggleMenu} className="hover:text-black">
               Home
