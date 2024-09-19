@@ -12,9 +12,9 @@ export const MainArticleText = () => {
           Destacá en redes sociales con producciones audiovisuales hechas a
           medida para vos.
         </p>
-        <button className="bg-SoftRed w-[185px] h-[48px] uppercase text-OffWhite hover:bg-VeryDarkBlue">
+        {/* <button className="bg-SoftRed w-[185px] h-[48px] uppercase text-OffWhite hover:bg-VeryDarkBlue">
           Ver más
-        </button>
+        </button> */}
       </div>
     </section>
   );
