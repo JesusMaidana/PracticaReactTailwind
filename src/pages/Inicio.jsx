@@ -3,7 +3,7 @@ import { MainArticle } from '../componentes/MainArticle';
 import { Formulario } from '../componentes/Formulario'; // Importa el nuevo componente
 import { Escuelas } from '../componentes/Escuelas';
 import { Testimonios } from '../componentes/Testimonios';
-import { NewContainer } from '../componentes/NewContainer';
+import { ProximosShows } from '../componentes/ProximosShows';
 import { ArticlesContainer } from '../componentes/ArticlesContainer';
 
 const Inicio = () => {
@@ -15,7 +15,7 @@ const Inicio = () => {
       
       <Escuelas />
       <Testimonios />
-      <NewContainer />
+      <ProximosShows />
       <ArticlesContainer />
     </>
   );
