@@ -1,27 +1,38 @@
 import React from "react";
 import ImagenJanet from '../assets/images/ImagenesTestimonios/janet.jpg';
+import ImagenEsmeralda from '../assets/images/ImagenesTestimonios/Esmeralda.jpg';
+import ImagenMartina from '../assets/images/ImagenesTestimonios/martina.jpg';
+import ImagenPaula from '../assets/images/ImagenesTestimonios/Paula.jpg';
+
 
 const testimonios = [
   {
     id: 1,
-    nombre: "Janet",
+    nombre: "@gabrielajanet.molina",
     comentario:
       "Lograron escuchar mi pedido, cuidar de mi imagen eligiendo lugares apropiados para lo que quería mostrar, estuvieron en cada detalle previo durante y posterior a la producción! Su trabajo fue mucho más de lo imaginado y mejor aún es que son un equipo de calidad humana hermosa! Estoy feliz con ver el resultado y lo impactante que fue para mí ❤️❤️🙌🫂",
     foto: ImagenJanet,
   },
   {
     id: 2,
-    nombre: "Ana Gómez",
+    nombre: "@Esmeralda.bellydance",
     comentario:
-      "Profesionalismo y creatividad en cada toma. Estamos muy satisfechos con el resultado final.",
-    foto: "url-foto-ana",
+      "Vengo a recomendarles que contraten a Shukran porque SON TODO LO QUE ESTÁ BIEN😍💜. El trabajo que hacen es INCREÍBLE. Si están buscando profesionales para hacer un audiovisual, llegaron a las personas indicadas. Mar y Jesu son lo más, súper organizados, profesionales, atentos, buena onda, te van guiando y ayudando para que durante la grabación estés suelta, te diviertas, lo disfrutes, te luzcas y el resultado de eso (más toda la edición hermosísima que hacen) sea un audiovisual original, elegante, único y súper súper lindo. SÚPER RECOMENDABLES💜",
+    foto: ImagenEsmeralda,
   },
   {
     id: 3,
-    nombre: "Carlos Martínez",
+    nombre: "@kamra.bellydancer",
     comentario:
-      "Recomendamos ampliamente su servicio. El equipo fue puntual y muy atento a nuestras necesidades.",
-    foto: "url-foto-carlos",
+      "Hace poquito realice mi 1era Producción con ellos, y tengo que destacar su profesionalismo. Estuvieron en cada detalle, desde el día uno que comenté mi idea, hasta el día que ví la producción final! Un Espectáculo, lo juro!! Simplemente Maravillosos , un gran equipo sin ninguna duda!",
+    foto: ImagenPaula,
+  },
+  {
+    id: 4,
+    nombre: "@martistringa",
+    comentario:
+      "Super recomendable su trabajo, la calidad de fotos y videos es buenísima y profesional. Su calidad humana para trabajar es excelente, te hacen sentir cómodx, disfrutas del proceso de crear y de hacer lo que te gusta, hice varios trabajos con ellos y siempre me fui feliz a casa ❤️ Son responsables con las fechas de entrega y cuando te dan el material no podes evitar mirarlo 1000 veces 🫶🏻 Son lo máximo",
+    foto: ImagenMartina,
   },
   // Agrega más testimonios aquí
 ];
