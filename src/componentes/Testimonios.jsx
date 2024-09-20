@@ -1,6 +1,5 @@
 import React from "react";
-import ImagenJanet from '../assets/images/ImagenesTestimonios/janet.jpg'
-
+import ImagenJanet from '../assets/images/ImagenesTestimonios/janet.jpg';
 
 const testimonios = [
   {
@@ -8,7 +7,7 @@ const testimonios = [
     nombre: "Janet",
     comentario:
       "Lograron escuchar mi pedido, cuidar de mi imagen eligiendo lugares apropiados para lo que quería mostrar, estuvieron en cada detalle previo durante y posterior a la producción! Su trabajo fue mucho más de lo imaginado y mejor aún es que son un equipo de calidad humana hermosa! Estoy feliz con ver el resultado y lo impactante que fue para mí ❤️❤️🙌🫂",
-    foto: ImagenJanet, // Usar la variable aquí
+    foto: ImagenJanet,
   },
   {
     id: 2,
@@ -37,14 +36,14 @@ export const Testimonios = () => {
         {testimonios.map((testimonio) => (
           <div
             key={testimonio.id}
-            className="flex items-start p-4 border rounded-lg shadow-sm"
+            className="flex flex-col items-center sm:flex-row sm:items-start p-4 border rounded-lg shadow-sm"
           >
             <img
               src={testimonio.foto}
               alt={testimonio.nombre}
-              className="w-16 h-16 rounded-full object-cover mr-4"
+              className="w-16 h-16 rounded-full object-cover mb-4 sm:mb-0 sm:mr-4" // Espaciado ajustado
             />
-            <div>
+            <div className="flex-1 text-center sm:text-left">
               <p className="text-lg italic">"{testimonio.comentario}"</p>
               <p className="mt-2 font-semibold">{testimonio.nombre}</p>
             </div>
