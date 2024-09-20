@@ -1,12 +1,14 @@
 import React from "react";
+import ImagenJanet from '../assets/images/ImagenesTestimonios/janet.jpg'
+
 
 const testimonios = [
   {
     id: 1,
-    nombre: "Juan Pérez",
+    nombre: "Janet",
     comentario:
-      "El servicio de foto y video para nuestro show de danza fue excelente. Las imágenes y los videos capturaron cada momento a la perfección.",
-    foto: "url-foto-juan",
+      "Lograron escuchar mi pedido, cuidar de mi imagen eligiendo lugares apropiados para lo que quería mostrar, estuvieron en cada detalle previo durante y posterior a la producción! Su trabajo fue mucho más de lo imaginado y mejor aún es que son un equipo de calidad humana hermosa! Estoy feliz con ver el resultado y lo impactante que fue para mí ❤️❤️🙌🫂",
+    foto: ImagenJanet, // Usar la variable aquí
   },
   {
     id: 2,
