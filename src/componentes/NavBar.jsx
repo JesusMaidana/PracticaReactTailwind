@@ -14,7 +14,7 @@ export const NavBar = ({ darkMode }) => {
 
   return (
     <>
-      <ul className="hidden sm:flex text-[18px] sm:w-[438px] sm:place-content-around sm:text-[16px] sm:items-center">
+      <ul className="hidden sm:flex text-[18px] sm:w-[438px] sm:place-content-around sm:text-[16px] sm:items-center lg:text-[20px] lg:gap-7 ">
         <li>
           <Link to="/" className="hover:text-SoftRed">
             Home
