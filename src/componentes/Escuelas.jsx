@@ -2,12 +2,15 @@ import React, { useEffect, useRef } from "react";
 import zahra from "../assets/images/Logos/LOGOSINLUZDEFONDO.png"; // Ajusta la ruta según sea necesario
 import BDW from "../assets/images/Logos/LOGO-BWF2024.png"; // Ajusta la ruta según sea necesario
 import Jazba from "../assets/images/Logos/Jazba.png"; // Ajusta la ruta según sea necesario
+import Maial from "../assets/images/Logos/Maial.png";
+import Janet from "../assets/images/Logos/Janet.png";
 
 const escuelas = [
-  { id: 1, nombre: "Escuela de Danza A", logo: "path/to/logo1.png" },
+  { id: 1, nombre: "Logo Janet", logo: Janet },
   { id: 2, nombre: "Logo Jazba", logo: Jazba },
   { id: 3, nombre: "Logo BDW", logo: BDW },
   { id: 4, nombre: "Logo Zahra", logo: zahra }, // Cambiado a "Zahra"
+  { id: 5, nombre: "Logo Maial", logo: Maial }, // Cambiado a "Zahra"
   // Agrega más escuelas aquí
 ];
 
