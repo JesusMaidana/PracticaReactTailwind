@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-export const MainArticle = () => {
+export const Hero = () => {
   const images = [image1, image2, image3, image4];
 
   return (

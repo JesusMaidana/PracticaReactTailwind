@@ -6,9 +6,7 @@ import { useState, useEffect } from "react";
 
 export const Header = () => {
   // Estado para el dark mode
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark" || false
-  );
+  const [darkMode, setDarkMode] = useState(localStorage.getItem("theme") === "dark" || false);
 
   // Efecto para cambiar la clase del body cuando cambia el dark mode
   useEffect(() => {

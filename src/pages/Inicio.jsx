@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainArticle } from '../componentes/MainArticle';
+import { Hero } from '../componentes/Hero';
 import { Formulario } from '../componentes/Formulario'; // Importa el nuevo componente
 import { Escuelas } from '../componentes/Escuelas';
 import { Testimonios } from '../componentes/Testimonios';
@@ -9,10 +9,11 @@ import { ArticlesContainer } from '../componentes/ArticlesContainer';
 const Inicio = () => {
   return (
     <>
-      <MainArticle />
+      <Hero />
       
       
       <Escuelas />
+      <Formulario /> {/* Agrega el nuevo componente aquí */}
       <Testimonios />
       <ProximosShows />
       <ArticlesContainer />
