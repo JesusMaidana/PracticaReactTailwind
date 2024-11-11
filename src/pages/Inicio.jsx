@@ -11,7 +11,6 @@ const Inicio = () => {
     <>
       <MainArticle />
       
-      <Formulario /> {/* Agrega el nuevo componente aquí */}
       
       <Escuelas />
       <Testimonios />
